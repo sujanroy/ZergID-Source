@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--<widget id="com.android.ZergID" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">-->
+ <widget id="com.Iphone.ZergID" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ZergID</name>
+    <description>
+        ZergID project deviceready.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <icon src="img/icon.png" />
+    <content src="index.html" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="WebViewBounce" value="false" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="KeyboardShrinksView" value="false" />
+   <!--  <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#000000" /> -->
+    <!-- Do not auto hide splash on iOS -->
+    <preference name="AutoHideSplashScreen" value="false" />
+        <feature name="SplashScreen"><param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    <param name="ios-package" value="CDVSplashScreen" /></feature>
+    <access origin="*" />
+</widget>

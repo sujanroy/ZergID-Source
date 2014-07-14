@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+     <!--   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" /> 
+            <title>ZergID Login</title>
+              <link rel="stylesheet" type="text/css" href="css/	style.css" />  -->
+              <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.7.1.js"></script>
+           <!--    <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>-->
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <link href="nprogress/nprogress.css" rel="stylesheet" />
+            <script src="nprogress/nprogress.js"></script>
+            <meta charset="utf-8" />
+             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+             <meta name="format-detection" content="telephone=no" />
+             <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, height=device-height" />  <!-- , target-densitydpi=device-dpi -->
+                <link rel="stylesheet" type="text/css" href="css/style.css" />
+             <link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+            <!-- <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>  -->
+             <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+              <script type="text/javascript" src="js/jstz-1.0.4.min.js"></script>
+              <script type="text/javascript" src="js/moment.min.js"></script>
+              <script type="text/javascript" src="js/moment-timezone.js"></script>
+              <script type="text/javascript" src="js/moment-timezone-data.js"></script>
+             <!-- <script type="text/javascript" src="jquery-1.9.0.min.js"></script> -->
+              <script type="text/javascript" src="js/jstz-1.0.4.min.js"></script>
+             <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <script type="text/javascript"><!--
+                 google_ad_client = "ca-pub-9291736771592509";
+                 /* JQMDemoAd1 */
+                 google_ad_slot = "9699201605";
+                 google_ad_width = 320;
+                 google_ad_height = 50;
+                 //-->               
+                 </script>
+               </head>
+    
+    <body onload="init()">
+        
+        <div id="loginPage" class="center" data-role="page" >
+            <style>
+                .ui-input-search, div.ui-input-text {
+                    margin-bottom:20px;
+                    background-color:#fff;
+                }           
+            .ui-checkbox
+            {
+            z-index: 0;
+            }
+            .login-remember > ui-btn-inner {
+                border-top: 0px solid #fff;
+            }
+           
+
+            .ui-body-c, .ui-overlay-c {color:#000;text-shadow: 0 0px 0 #FFFFFF;}
+            
+                </style>
+<div data-role="content">
+            <form id="loginForm" class="login" method="POST" action="" accept-charset="UTF-8">
+            <p class="profile_title">Login</p>
+            <input type="text" name="Username" id="Username" class="login-input" placeholder="Username" autofocus />
+                <input type="password" name="Password" id="Password" class="login-input" placeholder="Password" />
+                 <div id="remember" class="login-remember">
+                     <input type="checkbox" name="remember_me" id="remember_me" class="custom check" style="margin-top:8px;"/>
+                     
+                     <div style="color:#fff; margin-left:50px;">Remember Me </div> </div>
+                    <input id="submitButton" type="submit" value="LOGIN" class="login-submit" />
+                  <!--      <p class="login-help"><a href="index.html">Forgot password?</a></p> -->
+                 </form> </div>
+            <div id="footer" data-role="footer" data-position="fixed" data-tap-toggle="false" class="footerDiv" style="margin-bottom:-3px;" >
+                <img src="img/Inline-Ad.png" class="footerImage" />
+          <!--     <script type="text/javascript"
+                   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                   </script>-->
+            </div>
+          
+        </div>
+      </body>
+</html>
