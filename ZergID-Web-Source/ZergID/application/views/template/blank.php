@@ -1,0 +1,1 @@
+<div align="left"><?php echo $content; ?></div>

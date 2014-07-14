@@ -1,0 +1,146 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
+2013-03-22 01:04:14 --- CRITICAL: View_Exception [ 0 ]: The requested view user/left_bar could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in D:\wamp\www\zergid\system\classes\Kohana\View.php:137
+2013-03-22 01:04:14 --- DEBUG: #0 D:\wamp\www\zergid\system\classes\Kohana\View.php(137): Kohana_View->set_filename('user/left_bar')
+#1 D:\wamp\www\zergid\system\classes\Kohana\View.php(30): Kohana_View->__construct('user/left_bar', NULL)
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(16): Kohana_View::factory('user/left_bar')
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_index()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\system\classes\Kohana\View.php:137
+2013-03-22 01:05:14 --- CRITICAL: View_Exception [ 0 ]: The requested view user/left_bar could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in D:\wamp\www\zergid\system\classes\Kohana\View.php:137
+2013-03-22 01:05:14 --- DEBUG: #0 D:\wamp\www\zergid\system\classes\Kohana\View.php(137): Kohana_View->set_filename('user/left_bar')
+#1 D:\wamp\www\zergid\system\classes\Kohana\View.php(30): Kohana_View->__construct('user/left_bar', NULL)
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(16): Kohana_View::factory('user/left_bar')
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_index()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\system\classes\Kohana\View.php:137
+2013-03-22 01:41:15 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, '', '', '', '', '', '', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 01:41:15 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 01:43:23 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, '', '', '', '', '', '', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 01:43:23 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 01:43:49 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, '', '', '', '', '', '', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 01:43:49 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:08:29 --- CRITICAL: Database_Exception [ 1364 ]: Field 'created_date' doesn't have a default value [ INSERT INTO `zid_users` (`username`, `email`, `password`) VALUES ('shanmu24', 'shanmu.roxy@gmail.com', '6a7a0766c117cc22901e0661f0c9c59e16ac50f3a02a3603fa0d6a7cf6b67237') ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:08:29 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'INSERT INTO `zi...', false, Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1321): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Model\Auth\User.php(167): Kohana_ORM->create(Object(Validation))
+#3 D:\wamp\www\zergid\application\classes\Controller\Home.php(28): Model_Auth_User->create_user(Array, Array)
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_Home->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Home))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:10:27 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, '', '', '', '', '', '', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:10:27 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:10:54 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, '', '', '', '', '', '', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:10:54 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:11:43 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, 'Shanmu', 'V', '1989', 'Male', 'This is for testing', 'India', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:11:43 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:12:19 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, 'Shanmu', 'V', '1989', 'Male', 'This is for testing', 'India', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:12:19 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:13:41 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, 'Shanmu', 'V', '1989', 'Male', 'This is for testing', 'India', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:13:41 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:14:04 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, 'Shanmu', 'V', '1989', 'Male', 'This is for testing', 'India', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:14:04 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:16:13 --- CRITICAL: Database_Exception [ 1366 ]: Incorrect integer value: '' for column 'p_is_twitter_share' at row 1 [ CALL add_personal_info(19, 'Shanmu', 'V', '1989', 'Male', 'This is for testing', 'India', '', '', '', ''); ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-03-22 02:16:13 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'CALL add_person...', false, Array)
+#1 D:\wamp\www\zergid\application\classes\model\Profile.php(9): Kohana_Database_Query->execute()
+#2 D:\wamp\www\zergid\application\classes\Controller\User.php(31): Model_Profile->create_profile('19', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_User->action_profile()
+#4 [internal function]: Kohana_Controller->execute()
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_User))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#9 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251

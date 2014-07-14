@@ -1,0 +1,1 @@
+<div id="search_view"><?= $search_view; ?></div>

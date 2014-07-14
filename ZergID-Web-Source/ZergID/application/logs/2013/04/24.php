@@ -1,0 +1,385 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
+2013-04-24 00:01:32 --- CRITICAL: Database_Exception [ 1146 ]: Table 'bulkdb_zergid.characterdetail' doesn't exist [ SELECT `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `CharacterDetail` ON (`CharacterDetail`.`character_detail_id` = `GuildMembers`.`character_detail_id`) INNER JOIN `guildrole` ON (`guildrole`.`guild_role_id` = `GuildMembers`.`guild_role_id`) WHERE `GuildMembers`.`guild_id` = '118' AND `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:01:32 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `guildme...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(293): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:02:43 --- CRITICAL: Database_Exception [ 1146 ]: Table 'bulkdb_zergid.characterdetail' doesn't exist [ SELECT `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `CharacterDetail` ON (`CharacterDetail`.`character_detail_id` = `174`) INNER JOIN `guildrole` ON (`guildrole`.`guild_role_id` = `3`) WHERE `GuildMembers`.`guild_id` = '118' AND `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:02:43 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `guildme...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(293): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:03:04 --- CRITICAL: Database_Exception [ 1146 ]: Table 'bulkdb_zergid.characterdetail' doesn't exist [ SELECT `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `CharacterDetail` ON (`CharacterDetail`.`character_detail_id` = `174`) INNER JOIN `guildrole` ON (`guildrole`.`guild_role_id` = `3`) WHERE `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:03:04 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `guildme...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(292): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:03:25 --- CRITICAL: Database_Exception [ 1146 ]: Table 'bulkdb_zergid.characterdetail' doesn't exist [ SELECT `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `CharacterDetail` ON (`CharacterDetail`.`character_detail_id` = `174`) WHERE `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:03:25 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `guildme...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(290): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:04:37 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column '174' in 'on clause' [ SELECT `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `zid_character_details` ON (`zid_character_details`.`character_detail_id` = `174`) WHERE `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:04:37 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `guildme...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(290): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:05:47 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column '174' in 'on clause' [ SELECT `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `zid_character_details` ON (`zid_character_details`.`character_detail_id` = `174`) WHERE `GuildMembers`.`is_accepted` = 1 ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:05:47 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `guildme...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(290): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:07:05 --- CRITICAL: Database_Exception [ 1146 ]: Table 'bulkdb_zergid.characterdetail' doesn't exist [ SELECT `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `CharacterDetail` ON (`CharacterDetail`.`character_detail_id` = `GuildMembers`.`character_detail_id`) WHERE `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:07:05 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `guildme...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(290): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:07:44 --- CRITICAL: Database_Exception [ 1146 ]: Table 'bulkdb_zergid.characterdetail' doesn't exist [ SELECT `GuildMembers`.`guild_member_id`, `CharacterDetail`.`character_icon`, `CharacterDetail`.`character_name`, `guildrole`.`role_name`, `guildrole`.`guild_role_id`, `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `CharacterDetail` ON (`CharacterDetail`.`character_detail_id` = `GuildMembers`.`character_detail_id`) INNER JOIN `guildrole` ON (`guildrole`.`guild_role_id` = `GuildMembers`.`guild_role_id`) WHERE `GuildMembers`.`guild_id` = '118' AND `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:07:44 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `GuildMe...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(294): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:08:40 --- CRITICAL: Database_Exception [ 1146 ]: Table 'bulkdb_zergid.guildrole' doesn't exist [ SELECT `GuildMembers`.`guild_member_id`, `zid_character_details`.`character_icon`, `zid_character_details`.`character_name`, `guildrole`.`role_name`, `guildrole`.`guild_role_id`, `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `zid_character_details` ON (`zid_character_details`.`character_detail_id` = `GuildMembers`.`character_detail_id`) INNER JOIN `guildrole` ON (`guildrole`.`guild_role_id` = `GuildMembers`.`guild_role_id`) WHERE `GuildMembers`.`guild_id` = '118' AND `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:08:40 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `GuildMe...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(294): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:09:35 --- CRITICAL: Database_Exception [ 1146 ]: Table 'bulkdb_zergid.zid_guild_roled' doesn't exist [ SELECT `GuildMembers`.`guild_member_id`, `zid_character_details`.`character_icon`, `zid_character_details`.`character_name`, `zid_guild_roled`.`role_name`, `zid_guild_roled`.`guild_role_id`, `guildmembers`.`guild_member_id` AS `guild_member_id`, `guildmembers`.`guild_id` AS `guild_id`, `guildmembers`.`user_id` AS `user_id`, `guildmembers`.`character_detail_id` AS `character_detail_id`, `guildmembers`.`guild_role_id` AS `guild_role_id`, `guildmembers`.`guild_play_style` AS `guild_play_style`, `guildmembers`.`about_character` AS `about_character`, `guildmembers`.`is_speaker_available` AS `is_speaker_available`, `guildmembers`.`is_headset_available` AS `is_headset_available`, `guildmembers`.`is_voice_chat_available` AS `is_voice_chat_available`, `guildmembers`.`is_accepted` AS `is_accepted`, `guildmembers`.`created_date` AS `created_date`, `guildmembers`.`last_modified_date` AS `last_modified_date` FROM `zid_guild_members` AS `guildmembers` INNER JOIN `zid_character_details` ON (`zid_character_details`.`character_detail_id` = `GuildMembers`.`character_detail_id`) INNER JOIN `zid_guild_roled` ON (`zid_guild_roled`.`guild_role_id` = `GuildMembers`.`guild_role_id`) WHERE `GuildMembers`.`guild_id` = '118' AND `GuildMembers`.`is_accepted` = '1' ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 00:09:35 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `GuildMe...', 'Model_GuildMemb...', Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(294): Kohana_ORM->find_all()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_members()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 01:54:54 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 01:54:54 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/ajaxuplo...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 01:54:55 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 01:54:55 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/js/ajaxu...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 02:23:05 --- CRITICAL: ErrorException [ 8 ]: Trying to get property of non-object ~ APPPATH\views\guild\members.php [ 10 ] in D:\wamp\www\zergid\application\views\guild\members.php:10
+2013-04-24 02:23:05 --- DEBUG: #0 D:\wamp\www\zergid\application\views\guild\members.php(10): Kohana_Core::error_handler(8, 'Trying to get p...', 'D:\wamp\www\zer...', 10, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#2 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 D:\wamp\www\zergid\application\views\template\user.php(96): Kohana_View->__toString()
+#5 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#6 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#7 D:\wamp\www\zergid\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 D:\wamp\www\zergid\application\classes\Controller\template\user.php(64): Kohana_Controller_Template->after()
+#9 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(87): Controller_Template_User->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#12 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#15 {main} in D:\wamp\www\zergid\application\views\guild\members.php:10
+2013-04-24 02:23:31 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 02:23:31 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/uploads/...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 02:23:31 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 02:23:31 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/uploads/...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 02:23:37 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 02:23:37 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/uploads/...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 02:23:37 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 02:23:37 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/uploads/...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 02:44:27 --- CRITICAL: Session_Exception [ 1 ]: Error reading session data. ~ SYSPATH\classes\Kohana\Session.php [ 324 ] in D:\wamp\www\zergid\system\classes\Kohana\Session.php:125
+2013-04-24 02:44:27 --- DEBUG: #0 D:\wamp\www\zergid\system\classes\Kohana\Session.php(125): Kohana_Session->read(NULL)
+#1 D:\wamp\www\zergid\modules\database\classes\Kohana\Session\Database.php(74): Kohana_Session->__construct(Array, NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Session.php(54): Kohana_Session_Database->__construct(Array, NULL)
+#3 D:\wamp\www\zergid\modules\auth\classes\Kohana\Auth.php(58): Kohana_Session::instance('database')
+#4 D:\wamp\www\zergid\modules\auth\classes\Kohana\Auth.php(37): Kohana_Auth->__construct(Object(Config_Group))
+#5 D:\wamp\www\zergid\application\classes\Controller\template\user.php(14): Kohana_Auth::instance()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(69): Controller_Template_User->before()
+#7 [internal function]: Kohana_Controller->execute()
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#9 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#11 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#12 {main} in D:\wamp\www\zergid\system\classes\Kohana\Session.php:125
+2013-04-24 02:44:59 --- CRITICAL: Session_Exception [ 1 ]: Error reading session data. ~ SYSPATH\classes\Kohana\Session.php [ 324 ] in D:\wamp\www\zergid\system\classes\Kohana\Session.php:125
+2013-04-24 02:44:59 --- DEBUG: #0 D:\wamp\www\zergid\system\classes\Kohana\Session.php(125): Kohana_Session->read(NULL)
+#1 D:\wamp\www\zergid\modules\database\classes\Kohana\Session\Database.php(74): Kohana_Session->__construct(Array, NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Session.php(54): Kohana_Session_Database->__construct(Array, NULL)
+#3 D:\wamp\www\zergid\modules\auth\classes\Kohana\Auth.php(58): Kohana_Session::instance('database')
+#4 D:\wamp\www\zergid\modules\auth\classes\Kohana\Auth.php(37): Kohana_Auth->__construct(Object(Config_Group))
+#5 D:\wamp\www\zergid\application\classes\Controller\template\user.php(14): Kohana_Auth::instance()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(69): Controller_Template_User->before()
+#7 [internal function]: Kohana_Controller->execute()
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#9 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#11 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#12 {main} in D:\wamp\www\zergid\system\classes\Kohana\Session.php:125
+2013-04-24 04:00:32 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: character ~ APPPATH\views\guild\add.php [ 40 ] in D:\wamp\www\zergid\application\views\guild\add.php:40
+2013-04-24 04:00:32 --- DEBUG: #0 D:\wamp\www\zergid\application\views\guild\add.php(40): Kohana_Core::error_handler(8, 'Undefined varia...', 'D:\wamp\www\zer...', 40, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#2 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 D:\wamp\www\zergid\application\views\template\user.php(96): Kohana_View->__toString()
+#5 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#6 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#7 D:\wamp\www\zergid\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 D:\wamp\www\zergid\application\classes\Controller\template\user.php(64): Kohana_Controller_Template->after()
+#9 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(87): Controller_Template_User->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#12 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#15 {main} in D:\wamp\www\zergid\application\views\guild\add.php:40
+2013-04-24 04:25:10 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:25:10 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/ajaxuplo...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 04:25:10 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:25:10 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/js/ajaxu...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 04:25:10 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:25:10 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/ajaxuplo...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 04:28:08 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:28:08 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/ajaxuplo...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 04:28:08 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:28:08 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/js/ajaxu...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 04:28:08 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:28:08 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/ajaxuplo...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 04:28:08 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:28:08 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/js/ajaxu...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 04:47:55 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:47:55 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/ajaxuplo...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 04:47:55 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 04:47:55 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/js/ajaxu...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 05:15:39 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 05:15:39 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/ajaxuplo...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 05:15:39 --- CRITICAL: ErrorException [ 2 ]: preg_match() [function.preg-match]: Compilation failed: missing ) at offset 113 ~ SYSPATH\classes\Kohana\Route.php [ 420 ] in :
+2013-04-24 05:15:39 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'preg_match() [<...', 'D:\wamp\www\zer...', 420, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Route.php(420): preg_match('#^(?:(?P<direct...', 'public/js/ajaxu...', NULL)
+#2 D:\wamp\www\zergid\system\classes\Kohana\Request.php(470): Kohana_Route->matches(Object(Request))
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request.php(942): Kohana_Request::process(Object(Request), Array)
+#4 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#5 {main} in :
+2013-04-24 05:27:20 --- CRITICAL: Kohana_Exception [ 0 ]: The charcter_detail_id property does not exist in the Model_GuildMembers class ~ MODPATH\orm\classes\Kohana\ORM.php [ 757 ] in D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php:699
+2013-04-24 05:27:20 --- DEBUG: #0 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(699): Kohana_ORM->set('charcter_detail...', '43')
+#1 D:\wamp\www\zergid\application\classes\Controller\guild.php(107): Kohana_ORM->__set('charcter_detail...', '43')
+#2 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_create()
+#3 [internal function]: Kohana_Controller->execute()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#8 {main} in D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php:699
+2013-04-24 05:28:21 --- CRITICAL: Database_Exception [ 1364 ]: Field 'last_modified_date' doesn't have a default value [ INSERT INTO `zid_guild_members` (`guild_id`, `user_id`, `character_detail_id`, `guild_role_id`, `is_accepted`, `created_date`) VALUES ('123', '53', '43', '1', '1', '2013-04-24 05:28:21') ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 05:28:21 --- DEBUG: #0 D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'INSERT INTO `zi...', false, Array)
+#1 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1322): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 D:\wamp\www\zergid\modules\orm\classes\Kohana\ORM.php(1419): Kohana_ORM->create(NULL)
+#3 D:\wamp\www\zergid\application\classes\Controller\guild.php(110): Kohana_ORM->save()
+#4 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_create()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#7 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\wamp\www\zergid\modules\database\classes\Kohana\Database\Query.php:251
+2013-04-24 05:50:22 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: guild_members ~ APPPATH\views\guild\left_bar.php [ 17 ] in D:\wamp\www\zergid\application\views\guild\left_bar.php:17
+2013-04-24 05:50:22 --- DEBUG: #0 D:\wamp\www\zergid\application\views\guild\left_bar.php(17): Kohana_Core::error_handler(8, 'Undefined varia...', 'D:\wamp\www\zer...', 17, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#2 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 D:\wamp\www\zergid\application\views\template\user.php(91): Kohana_View->__toString()
+#5 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#6 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#7 D:\wamp\www\zergid\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 D:\wamp\www\zergid\application\classes\Controller\template\user.php(64): Kohana_Controller_Template->after()
+#9 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(87): Controller_Template_User->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#12 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#15 {main} in D:\wamp\www\zergid\application\views\guild\left_bar.php:17
+2013-04-24 05:51:22 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: guild_members ~ APPPATH\views\guild\left_bar.php [ 17 ] in D:\wamp\www\zergid\application\views\guild\left_bar.php:17
+2013-04-24 05:51:22 --- DEBUG: #0 D:\wamp\www\zergid\application\views\guild\left_bar.php(17): Kohana_Core::error_handler(8, 'Undefined varia...', 'D:\wamp\www\zer...', 17, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#2 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 D:\wamp\www\zergid\application\views\template\user.php(91): Kohana_View->__toString()
+#5 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#6 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#7 D:\wamp\www\zergid\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 D:\wamp\www\zergid\application\classes\Controller\template\user.php(64): Kohana_Controller_Template->after()
+#9 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(87): Controller_Template_User->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#12 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#15 {main} in D:\wamp\www\zergid\application\views\guild\left_bar.php:17
+2013-04-24 07:46:11 --- CRITICAL: ErrorException [ 8 ]: Use of undefined constant ff - assumed 'ff' ~ APPPATH\views\guild\members.php [ 17 ] in D:\wamp\www\zergid\application\views\guild\members.php:17
+2013-04-24 07:46:11 --- DEBUG: #0 D:\wamp\www\zergid\application\views\guild\members.php(17): Kohana_Core::error_handler(8, 'Use of undefine...', 'D:\wamp\www\zer...', 17, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#2 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#3 D:\wamp\www\zergid\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 D:\wamp\www\zergid\application\views\template\user.php(96): Kohana_View->__toString()
+#5 D:\wamp\www\zergid\system\classes\Kohana\View.php(61): include('D:\wamp\www\zer...')
+#6 D:\wamp\www\zergid\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\wamp\www\zer...', Array)
+#7 D:\wamp\www\zergid\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 D:\wamp\www\zergid\application\classes\Controller\template\user.php(64): Kohana_Controller_Template->after()
+#9 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(87): Controller_Template_User->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#12 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#15 {main} in D:\wamp\www\zergid\application\views\guild\members.php:17
+2013-04-24 09:47:51 --- CRITICAL: ErrorException [ 8 ]: Undefined index: roleid ~ APPPATH\classes\Controller\guild.php [ 339 ] in D:\wamp\www\zergid\application\classes\Controller\guild.php:339
+2013-04-24 09:47:51 --- DEBUG: #0 D:\wamp\www\zergid\application\classes\Controller\guild.php(339): Kohana_Core::error_handler(8, 'Undefined index...', 'D:\wamp\www\zer...', 339, Array)
+#1 D:\wamp\www\zergid\system\classes\Kohana\Controller.php(84): Controller_guild->action_promote()
+#2 [internal function]: Kohana_Controller->execute()
+#3 D:\wamp\www\zergid\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_guild))
+#4 D:\wamp\www\zergid\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 D:\wamp\www\zergid\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 D:\wamp\www\zergid\index.php(118): Kohana_Request->execute()
+#7 {main} in D:\wamp\www\zergid\application\classes\Controller\guild.php:339

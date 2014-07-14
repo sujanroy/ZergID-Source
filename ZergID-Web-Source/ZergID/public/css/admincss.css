@@ -1,0 +1,171 @@
+.popupGameClose
+{
+    font-size:20px;  
+    line-height:15px;  
+    right:5px;  
+    top:5px;  
+    position:absolute;  
+    color:#6fa5e2;  
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.radio_class label
+{
+    font-size: 12px;
+    color:#2A2A2A;
+    font-family: "Helvetica-Bold";
+    width:150px;
+    margin-top: 5px;
+    margin-right:11px;
+}
+.character_game
+{
+    font-size:14px;
+    color: #38cbf0;
+    float:left;
+    text-decoration: none;
+    font-family: "Helvetica-Light";
+
+}
+.popupGuildmembersClose
+{
+    font-size:20px;  
+    line-height:15px;  
+    right:5px;  
+    top:5px;  
+    position:absolute;  
+    color:#6fa5e2;  
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.delete_guild_link{
+font-size:12px; 
+    font-weight:bold;
+    color:#1CC5EF; 
+    margin-left:10px;
+    margin-top:5px;
+    cursor: pointer;
+    
+}
+.dynclass
+{
+font-family: "Helvetica-Light";
+font-size: 10pt;
+color: #000000;
+width:105px;
+height:25px;
+border-style:solid;
+    border-width:thin; 
+    border-color: #DDDDDD;
+    margin-top:5px;
+}
+
+.alertpopup
+{
+margin-left: -130px; 
+position:fixed;
+display:none; /* Hide the DIV */
+background:#FFFFFF;  
+margin-top: 10px;
+z-index:9999; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+border:1px solid #fff;  	
+padding:15px;  
+font-size:15px;
+}
+.ui-state-disabled
+{
+    color:#000000;
+   text-decoration:none;
+}
+.select_box_class{
+ width:200px;  
+    padding:6px;
+    margin-top:20px;
+    font-family: "Helvetica-Light";
+    font-size: 8.64pt;
+    color:#2a2a2a;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -o-appearance: none;
+    background: transparent url("../images/select-arrow.png") no-repeat;
+    background-position:165px center;
+    overflow:hidden;
+    border-style:solid;
+    border-width:thin; 
+    border-color: #DDDDDD;
+    font-size: 8.64pt;
+    margin-top:5px;
+}
+#items 
+{
+    width: 950px;
+    font-size:15px;
+    margin-left:8px;
+}
+#items a
+{
+     color: #33CCFF;
+     font:'Helvetica-Bold';
+     
+}
+
+.admim_media_image{
+    height: 50px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 70px;
+/*    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;*/
+    margin-right: 5px;
+
+}
+
+.edit_comments {
+   image: url(public/images/edit-icon.png); 
+}
+
+.admin_feed_text{
+    text-align: justify;
+    padding-top: 5px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.admin_feed-media-image {
+    border: 1px solid #FFFFFF;
+    margin-right: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 70px;
+    height: 50px;
+}
+
+.popupGameClose
+{
+    font-size:20px;  
+    line-height:15px;  
+    right:5px;  
+    top:5px;  
+    position:absolute;  
+    color:#6fa5e2;  
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#items 
+{
+    width: 950px;
+    font-size:15px;
+    margin-left:8px;
+}
+#items a
+{
+     color: #33CCFF;
+     font:'Helvetica-Bold';
+     
+}
